@@ -17,11 +17,13 @@ function updateCounts() {
 function toggleFavorite(button) {
   const heartCount = document.getElementById("heart-count");
 
-  if (button.innerText === "♡") {
-    button.innerText = "❤️";  // outline → fill
+  if (button.innerText.trim() === "♡") {
+
+    button.innerHTML = '<img src="heart.png" alt="heart" class="w-6 h-6">';
     heartCount.innerText = parseInt(heartCount.innerText) + 1;
   } else {
-    button.innerText = "♡";   // fill → outline
+  
+    button.innerHTML = "♡";
     heartCount.innerText = parseInt(heartCount.innerText) - 1;
   }
 }
