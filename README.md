@@ -1,4 +1,4 @@
-<p style="font-size:20px; color:red;">1.What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?</p>
+<p style="font-size:20px; color:red;">1.What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 Ans:
 document.getElementById("id")
 Selects a single element by its id.
@@ -61,12 +61,13 @@ Stops the default browser action.
 Example:
  Preventing form submission or link navigation.
 document.querySelector("form").addEventListener("submit", (e) => {
-  e.preventDefault(); // stops form from submitting
+  e.preventDefault()
   console.log("Form not submitted");
 });
 event.stopPropagation()
 Stops the event from bubbling up to parent elements.
 document.getElementById("child").addEventListener("click", (e) => {
-  e.stopPropagation(); // stops bubbling
+  e.stopPropagation(); 
   console.log("Only child clicked");
 });
+</p>
