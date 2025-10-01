@@ -17,8 +17,8 @@ Selects all elements that match a CSS selector.
 Returns a NodeList (static, doesn’t auto-update).
 
 2. How to create and insert a new element into the DOM?
-Ans:Example: Adding a new <p> inside a <div>:
-
+Ans:
+Example: Adding a new <p> inside a <div>:
 const p = document.createElement("p");
 p.textContent = "Hello, I am new here!";
 const container = document.getElementById("container");
